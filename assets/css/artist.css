@@ -1,0 +1,150 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+nav {
+  height:80px;
+  background:#fff;
+  display:flex;  
+  align-items:center;
+  margin: 30px auto;
+
+}
+
+img{ 
+width:100px;
+height:90px;
+margin-top: 20px;
+margin-left: 20px;
+}
+
+
+.logo{
+  
+  background: linear-gradient(to right, #a50a0ae7, #d17000,#f0b821, #2ba712, #2a44d4, #aa1bc7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  font-size: 1.5rem;
+  font-weight:bold;
+  font-style:italic;
+  padding: 0;
+  position:relative;
+  margin-top: 50px;
+  margin-left: 0px;
+}
+ul {
+  flex: 1;
+  text-align: right;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 50px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: 'Offside', serif;
+  font-size: medium;
+  font-weight: bold;
+  color:#000000;
+ 
+  position: relative;
+}
+
+ul li a:hover {
+  background: linear-gradient(to right, #a50a0ae7, #d17000,#f0b821, #2ba712, #2a44d4, #aa1bc7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+}
+
+ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: gray;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+ 
+}
+
+
+body .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center; /* Centers the heading */
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#filter-buttons button {
+  border-radius: 3px;
+  background: #fff;
+  border-color: transparent;
+}
+
+#filter-buttons button:hover {
+  background: #ddd;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #6c757d;
+}
+
+#filterable-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the cards horizontally */
+  align-items: center; /* Centers the cards vertically */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#filterable-cards .card {
+  width: 16rem; /* Slightly wider cards for larger images */
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+#filterable-cards .card img {
+  width: 100%; /* Ensures the image spans the card width */
+  height: 250px; /* Slightly increased height for larger images */
+  object-fit: cover; /* Crops the image to fit the fixed dimensions */
+}
+
+#filterable-cards .card .card-body {
+  text-align: center;
+  padding: 10px;
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+    <script src="assets/js/previewContainer.js" defer></script>
+
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <a href="index.html"><img src="assets/img/VisualVoicesL.png" alt="Logo"></a>
+            <div class="logo">Visual Voices</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artist.html">Artists</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="Artworks">
+        <h3 class="title">Artworks</h3>
+        <div class="top-content">
+            <input type="radio" id="check1" name="photos" checked>
+            <label for="check1">All</label>
+            <input type="radio" id="check2" name="photos">
+            <label for="check2">Empowerment</label>
+            <input type="radio" id="check3" name="photos">
+            <label for="check3">Equality</label>
+            <input type="radio" id="check4" name="photos">
+            <label for="check4">Violence</label>
+        </div>
+
+        <section id="art-showcase" class="art-showcase">
+            <div class="Artworks-container">
+                <div class="photo-gallery">
+                    <div class="pic Empowerment" id="column">
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('United in Diversity ', 'This artwork symbolizes unity and equality through the depiction of hands in different colors, representing people from all walks of life. It aims to convey a powerful anti-racism message, celebrating diversity and promoting the idea that regardless of our differences, we are all connected and deserving of respect and equality. ', 'APUGAN, JOHN PAUL', 'assets/img/Empowerment/Apugan, John Paul G..jpg', 'HOVER ON IMAGE TO ZOOM IN')" >
+                                    <img src="assets/img/Empowerment/Apugan, John Paul G..jpg" alt="Art 3">
+                                    <h3>JOHN PAUL APUGAN</h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>
+                            </div>
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Healing Through Compassion ', 'This poster conveys the message of providing care and support to those enduring silent battles. The central figure, with a broken heart symbol on their chest, represents someone struggling with emotional pain. The individuals on his side offering comfort embody the role of compassion in fostering healing and resilience. The soft, warm hues and the flowing lines in the background symbolize hope and the interconnectedness of humanity. The design encourages reaching out, spreading kindness, and reminding us that no one should face their struggles alone. ', 'ARELLANO, BLESSY', 'assets/img/Empowerment/Arellano, Blessy R..png', 'HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Arellano, Blessy R..png" alt="Art 3">
+                                    <h3>BLESSY ARELLANO</h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div>
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Empowerment in Color ', 'A vibrant display of bold colors and abstract shapes, captures the essence of empowerment through its energetic and dynamic design. The striking colors and fluid patterns symbolize strength, confidence, and resilience, inspiring viewers to embrace their inner power and confidence. It will serve as a visual reminder of the vitality and positivity that come from feeling empowered.  ', 'BELER, CRISTINE PEARL', 'assets/img/Empowerment/Beler, Cristine Pearl_20241220_194218_0000.png','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Beler, Cristine Pearl_20241220_194218_0000.png" alt="Art 3">
+                                    <h3>CRISTINE PEARL BELER </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div>
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Seeds of peace are sown through awareness ', ' Embrace the present moment fully, allowing yourself to observe and understand the workings of your mind without judgment or distraction. It is through this mindful awareness that the seeds of peace are planted, creating a foundation for inner calm and clarity to grow. By being present and attentive, you cultivate the ability to respond to life with wisdom and compassion, nurturing a deeper sense of harmony within yourself and the world around you ', 'CAPISTRANO, LANCE', 'assets/img/Empowerment/Capistrano, Lance M..png','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Capistrano, Lance M..png" alt="Art 3">
+                                    <h3>LANCE CAPISTRANO </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div>
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('freedom for all gender ', 'This digital poster illustrates the concept of inclusivity and gender equality. It features silhouettes of diverse individuals, symbolizing unity and diversity. The text FREEDOM FOR ALL GENDER emphasizes the importance of ensuring equal rights, freedom, and respect for people of all genders. The vibrant use of colors and overlapping silhouettes highlights the interconnectedness of humanity while promoting a message of empowerment and acceptance. ', 'DELFIN, CHARLES', 'assets/img/Empowerment/CHARLES D ARTS (1).png','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/CHARLES D ARTS (1).png" alt="Art 3">
+                                    <h3>CHARLES DELFIN </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div>
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Through the darkness, We reach. ', ' The artwork conveys a powerful message of hope and connection. It illustrates individuals helping each other amidst a turbulent and emotional background, symbolizing support during difficult times. The text, “You are not alone”, Emphasizes solidarity and the importance of reaching out to others in moments of struggle. ', 'HIPOLITO, SAM MARGARETTE', 'assets/img/Empowerment/Hipolito, Sam Margarette.PNG','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Hipolito, Sam Margarette.PNG" alt="Art 3">
+                                    <h3>SAM MARGARETTE HIPOLITO </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div>  
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Breaking the Inequality', 'Empowerment is the process of gaining control, confidence, and the ability to make choices that positively impact one s life and environment. The art shows freedom in the inequality we have. People should start treating each other equally specially if it has a relation to its gender. Gender doesn t define what you are capable of doing. Breaking free from the norms about gender is one of the most beautiful things that will happen in our society. Having equality means having a peaceful life in society.', 'ICARO, JAMAICA', 'assets/img/Empowerment/Icaro, Jamaica.jpg','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Icaro, Jamaica.jpg" alt="Art 3">
+                                    <h3>JAMAICA ICARO </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div>                             
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Soul Harmony', 'It visualize a very bright positive energy through digitalized art, with every each person who dont based in status, appearance, race and gender that live in peace with no discrimination.', 'JIMENEZ, MATTEW', 'assets/img/Empowerment/Jimenez, Mathew.jpg','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Jimenez, Mathew.jpg" alt="Art 3">
+                                    <h3>MATTEW JIMENEZ </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div> 
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Breaking Boundaries:You do you ', 'This digital art explores the idea of challenging what people are used to about gender, encouraging individuals to become their own qualities and show who they really are even if they are assigned into a different gender. The visual elements focus on contrasts of stereotypical masculinity and femininity, the piece emphasized that gender roles should not limit personal expression or identity. This reflects on the message of challenging societal expectations and embracing the spectrum of human expression, free from constraints of traditional gender roles. ', 'NAÑOS, JOHN MICHAEL', 'assets/img/Empowerment/Nanos, Johh Michael.png','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Nanos, Johh Michael.png" alt="Art 3">
+                                    <h3>JOHN MICHAEL NAÑOS </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div> 
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Equality in our Society ', 'The Digital art shows that in its society, the people live equally. they walk outside their houses with freedom and without discrimination ', 'ODIVILAS, ANGELO', 'assets/img/Empowerment/Odivilas, Angelo J..png ','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Odivilas, Angelo J..png" alt="Art 3">
+                                    <h3>ANGELO ODIVILAS </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div> 
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Hands of Empowerment ', 'The artwork shows a hand smeared in shades of red, symbolizing the bloody hands of violence that generations of women have been enduring. The artwork also shows a fist breaking free from the said hand, symbolizing the empowerment women have gained throughout the years, slowly but surely setting them free from the hands of violence ', 'PARAM, GEROME EMMANUEL', 'assets/img/Empowerment/Param, Gerome Emmanuel S..png ','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Param, Gerome Emmanuel S..png" alt="Art 3">
+                                    <h3>GEROME EMMANUEL PARAM </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div> 
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Title ', 'Description ', 'SALANDO, SEAN DAVE', 'assets/img/Empowerment/Salando, Sean Dave.jpg ','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Salando, Sean Dave.jpg" alt="Art 3">
+                                    <h3>SEAN DAVE SALANDO </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div>  
+                            <div class="DigArt">
+                                <div class="art-piece" onclick="openPopup('Empowering Voices: A Journey Toward Healing ', 'This artwork symbolizes unity, resilience, and empowerment in raising awareness about gender-based violence and mental health. The dancers dynamic movements represent solidarity, while vibrant colors reflect emotions ranging from struggle to hope. The urban setting emphasizes the communal nature of these issues, and the focus on women highlights their strength in overcoming challenges. It aligns with the theme by encouraging self-awareness, healing, and collective action. ', 'VERGARA, LIEZEL', 'assets/img/Empowerment/Vergara, Liezel.png ','HOVER ON IMAGE TO ZOOM IN')">
+                                    <img src="assets/img/Empowerment/Vergara, Liezel.png" alt="Art 3">
+                                    <h3>LIEZEL VERGARA </h3>
+                                    <div class="artist">Artist Name</div>
+                                </div>                     
+                            </div>                   
+                        </div>                       
+                    </div>
+                    <div class="pic Equality" id="column">
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Embracing Unity: A Celebration of Gender and Growth ', 'This artwork symbolizes the beauty of gender diversity and the interconnectedness of humanity with nature and the cosmos. The central symbol represents the merging of masculine and feminine energies, surrounded by elegant silhouettes of individuals who embody strength and grace. Delicate plants and celestial patterns suggest growth, harmony, and universal balance, while the Earth in the background serves as a reminder of our shared responsibility to nurture inclusivity and unity. ', 'AMOYO, STANYL ANDREI', 'assets/img/Equality/Amoyo,StanlyAndrei.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Amoyo,StanlyAndrei.png" alt="Art 3">
+                                <h3>STANYL ANDREI AMOYO</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Imbalances of Gender Roles', 'The artwork shows the imbalances of gender roles whereas the concept of Gender Equality is fading because of this. Seeing the purpose of a person doesnt depend on their gender but rather on their capabilities. With the concept of men being the one who should work, lift, etc. and the women should stay at home and focus on giving birth or children, the roles of each person are losing its balance because women can also do what men can do, they are capable of doing it if they wanted to. Yet, many people failed to notice this because they re still stuck on the old concept of gender roles.', 'BERNALTE, SARAH', 'assets/img/Equality/Bernalte, Sarah R.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Bernalte, Sarah R.png" alt="Art 3">
+                                <h3>SARAH BERNALTE</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Promoting Gender Equality and Inclusivity ', 'The image highlights the importance of gender equality,  symbolized by raised fists in a spectrum of colors that represent diversity and inclusion. .The rainbow  background signifies support for LGBTQ+ community, while the icons of male and female figure illustrate the concept of equality across all genders. The interlinked gender symbols reinforce the idea of interconnectedness and mutual respect emphasizing that everyone, regardless of gender identity, deserves equal opportunities, rights, and representation. The vibrant design reflects empowerment, unity, and celebration of diversity in a modern and inclusive society. ', 'CABUAY, ROMEO', 'assets/img/Equality/Cabuay,Romeo.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Cabuay,Romeo.png" alt="Art 3">
+                                <h3>ROMEO CABUAY</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Embracing Identity, The Value of Gender Equality ', 'Gender equality is an essential foundation of a fair and inclusive society. It advocates for equal rights, opportunities, and treatment for all individuals, regardless of gender identity. This Digital Poster/Art seeks to address and eliminate the systemic discrimination and disparities that disproportionately affect women and members of the LGBTQ+ community. By promoting fairness and respect, gender equality empowers everyone to contribute meaningfully to society and ensures that all voices are heard and valued. ', 'CAMAT, CHARLES JOSIAH', 'assets/img/Equality/Camat, Charles Josiah.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Camat, Charles Josiah.png" alt="Art 3">
+                                <h3>CHARLES JOSIAH CAMAT</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Colors of Identity Pride and Diversit ', 'Achieving gender equality involves ensuring that both men and women, as well as people of non-binary genders, have the same access to education, employment, healthcare, and legal protections, fostering an inclusive society where all individuals can thrive without gender-based limitations. ', 'CASAN, JAN MEJER', 'assets/img/Equality/Casan,Jan Mejer R..png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Casan,Jan Mejer R..png" alt="Art 3">
+                                <h3>JAN MEJER CASAN</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('The Tree of Equality ', 'This artwork represents the strength and beauty of equality, with a tree symbolizing growth. The gender symbols on its branches highlight inclusivity and diversity, while its glowing roots reflect the values of unity and respect. Set against a vibrant gradient, the design inspires hope and reminds us that equality is the foundation of progress. ', 'GALVEZ, JOHN PAUL', 'assets/img/Equality/Galvez, John Paul.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Galvez, John Paul.png" alt="Art 3">
+                                <h3>JOHN PAUL GALVEZ</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Near to Feel, Far to Heal ', 'This digital art illustrates the intricate balance between the beauty and pain within the human mind. At the center, it highlights the ‘blossomness’ of the human mind—a symbol of growth, resilience, and renewal amidst the negativity that surrounds us. It reflects our ability to heal, even in the face of deep emotional wounds. Despite the scars left by negative words and thoughts, it reminds us that we are more than the turmoil within. Near to feel, far to heal aims to show the strength of the human spirit, showcasing that, even while hurting, we are capable of growing, evolving, and rising above the darkness. ', 'HITUNGO, KIMBERLY', 'assets/img/Equality/Hitungo, Kimberly.jpg','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Hitungo, Kimberly.jpg" alt="Art 3">
+                                <h3>KIMBERLY HITUNGO</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Embracing Equity: A Path Toward Gender Equality ', 'This artwork represents the essence of gender equity, emphasizing fairness and inclusivity. The raised fist symbolizes strength and unity in the fight for justice, while the scales of balance represent the pursuit of equal opportunities for all genders. The colorful silhouettes in the background highlight the diversity of individuals, reinforcing the idea that equity celebrates differences while ensuring fairness. The phrase Embrace Equity calls for action, reminding us that achieving true gender equality requires addressing systemic barriers and creating a more inclusive society where everyone can thrive. ', 'JUBILAG, JHON CARL', 'assets/img/Equality/Jubilag, Jhon Carl D..png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Jubilag, Jhon Carl D..png" alt="Art 3">
+                                <h3>JHON CARL JUBILAG</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup(' Laughter in Unity ', 'This artwork shows a group of women laughing and enjoying each others company. The bright and warm colors, like orange, yellow, and pink, make the scene feel full of life and happiness. The women are talking, smiling, and using expressive gestures, which show their strong connection and friendship. The background, with buildings lit by sunlight, adds to the cheerful vibe of the piece. The artist uses bold, colorful strokes that feel lively and slightly abstract, making the emotions stand out even more. This piece celebrates community, joy, and the shared bonds of friendship ', 'LLAGAS, CHRISTOFER JR', 'assets/img/Equality/Llagas, Christofer Jr. E..png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Llagas, Christofer Jr. E..png" alt="Art 3">
+                                <h3>CHRISTOFER JR LLAGAS</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Equal Rights, Equal Opportunities ', 'Means ensuring that everyone regardless of their gender,has the same legal rights,social status and access to resources,opportunities and decision making process.it emphasizes fairness and elimination of discrimination,enabling individuals to pursue their goals and contribute to society without being limited by gender-based barriers.this principle advocates for equity in areas such as education,employment,leadership,and personal freedom,fostering an inclusive and just society. ', 'LUSANTA, JANREY', 'assets/img/Equality/Lusanta,Janrey C.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Lusanta,Janrey C.png" alt="Art 3">
+                                <h3>JANREY LUSANTA</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('You Dont Have to Fit in a Mold Just to Be Accepted ', 'It depicts self-acceptance and uniqueness. It uses a grid of circles to represent societal expectations and norms, implying that keeping up to these expectations is similar to trying to fit into a pre-made mold. In contrast, a core flower-like design represents the freedom to be oneself, free by typical expectations. The message is clear: you are valuable and worthy of love and acceptance just as you are, without having to change to fit in ', 'MIRANDA, JUSTIN EARL', 'assets/img/Equality/Miranda, Justin Earl D.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Miranda, Justin Earl D.png" alt="Art 3">
+                                <h3>JUSTIN EARL MIRANDA</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Unity in Diversity: A Vision of Equality and Justice ', 'The image highlights themes of diversity, equality, and unity. It features a scale of justice, a rainbow for inclusivity, and diverse people holding hands to symbolize solidarity. Various symbols represent issues like gender equality, healthcare, and environmental care. It promotes working together for a fair and inclusive society. ', 'NAAGAS, JHERYMAINE', 'assets/img/Equality/Naagas, Jherymaine C..png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Naagas, Jherymaine C..png" alt="Art 3">
+                                <h3>JHERYMAINE NAAGAS</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Unity in Diversity', 'This vibrant artwork features two overlapping profiles filled with a spectrum of colors, symbolizing the beauty of diversity and the harmony achieved through unity. The flowing colors emphasize the interconnectedness of different identities and the celebration of inclusivity.', 'NAQUILA, MHELVIN', 'assets/img/Equality/Naquila, Mhelvin O..png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Naquila, Mhelvin O..png" alt="Art 3">
+                                <h3>MHELVIN NAQUILA</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Generation Society: The Evolution of Communities ', 'This image illustrates the interconnected nature of individuals within a society. The silhouettes signify people from different walks of life, united in purpose and progression. The circular graphic serves as a focal point, symbolizing balance and cohesion within generations, emphasizing the continuous cycle of growth and collaboration. ', 'PAKINGAN, KENNETH', 'assets/img/Equality/PAKINGAN, KENNETH, B..jpg','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/PAKINGAN, KENNETH, B..jpg" alt="Art 3">
+                                <h3>KENNETH PAKINGAN</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Spectrum of Identity : Stories in color', 'The story beyond this artwork is the gender equality and the stories to tell of different identity that we have in our society, the color indicates lgbtq community and this artworks represent that each gender can do what the other gender can do, gender should not be the hindrance to do something you want and love.', 'REYES, KENAN ALLY', 'assets/img/Equality/Reyes, Kenan Ally.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Reyes, Kenan Ally.png" alt="Art 3">
+                                <h3>KENAN ALLY REYES</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>                       
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Faces of Resilience: Breaking the Silence on Gender-Based Violence ', 'The image represents unity in diversity, highlighting the collective struggle against gender-based violence and its mental health effects. The vibrant colors and overlapping figures symbolize resilience and shared experiences. Each face reflects the silent impact of violence, urging deeper reflection. The abstract design connects with the theme, Seize the Moment of Knowing More About Your Mental Health. It emphasizes the importance of awareness and mental well-being in addressing this critical issue. ', 'TORRICO, RANIEL', 'assets/img/Equality/Torrico,Raniel T.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Torrico,Raniel T.png" alt="Art 3">
+                                <h3>RANIEL TORRICO</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('The Many Within One ', 'This piece depicts a singular human figure composed of countless faces, each embodying a distinct gender and identity. The faces, painted in a variety of bold and harmonious colors, represent the fluidity and diversity of human existence. The blending of features symbolizes the interconnectedness of all identities, illustrating that individuality and equality coexist. This artwork invites reflection on the shared essence of humanity and the importance of honoring every expression of self, championing a world where all genders are valued equally ', 'VILLANUEVA, EUNICE', 'assets/img/Equality/Villanueva, Eunice M.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Equality/Villanueva, Eunice M.png" alt="Art 3">
+                                <h3>EUNICE VILLANUEVA</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                                               
+                    </div>
+                    <div class="pic Violence" id="column">
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Break the Chains: Stop Gender Violence ', 'This impactful digital art piece highlights the urgent need to address and end gender-based violence. The central figure, surrounded by chains, symbolizes oppression and entrapment, while the vibrant icons of hearts, gender symbols, scales of justice, and raised fists represent resilience, equality, and empowerment. The bold text STOPP GENDER VIOLENCE sends a powerful message, encouraging advocacy and action against this critical issue. The use of bright, contrasting colors and diverse ', 'AJERO, FRANCIS GAIL', 'assets/img/Violence/AJERO, FRANCIS GAIL C..png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Violence/AJERO, FRANCIS GAIL C..png" alt="Art 3">
+                                <h3>FRANCIS GAIL AJERO</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Words Affects Mental Health ', 'This digital artwork emphasizes the effects of mental health due to gender discrimination, this represents different kinds of people such as adults, teens or even children. Every word that comes into someone’s mouth that discriminates against one another, affects someone’s mental being that may lead to insecurities and the feeling of being unworthy. The softness of color in this artwork signifies calmness, warmth, and a sense of comfort so that we all people should be kind to each other ', 'AUSENTE, JULIANA MARIE', 'assets/img/Violence/AUSENTE_DIGITAL_ART_20241220_221519_0000.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Violence/AUSENTE_DIGITAL_ART_20241220_221519_0000.png" alt="Art 3">
+                                <h3>JULIANA MARIE AUSENTE</h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Shattered Lives: The Unseen Reality of Animal Cruelty ', 'Shows the world of animal exploitation and abuse, which is frequently hidden. This title highlights the serious and enduring effects of animal abuse, as many animals suffer physically and psychologically in silence. While the unseen realityhighlights the fact that a large portion of this cruelty takes place behind closed doors and out of the publics sight, the phrase shattered lives indicates the great suffering done to innocent creatures. The purpose of this activity would be to make these hidden facts public, educate awareness, and encourage action to put a stop to cruelty toward animals ', 'BOHOL, PRINCE SAMUEL', 'assets/img/Violence/BOHO. PRINCE SAMUEL D.jpeg','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Violence/BOHO. PRINCE SAMUEL D.jpeg" alt="Art 3">
+                                <h3>PRINCE SAMUEL BOHOL </h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('My Mind, Body, Heart Matters ', 'My Mind, Body, Heart Matters” emphasizes the holistic impact of Gender-Based Violence (GBV). It acknowledges the psychological, physical, and emotional harm inflicted upon individuals. By highlighting these interconnected aspects, the artwork aims to raise awareness about the devastating consequences of GBV and encourage individuals to prioritize their well-being and seek support. This message underscores the importance of respecting and valuing the entire person, beyond just physical safety.', 'CANTOR, JAYZEL B.', 'assets/img/Violence/CANTOR,JAYZEL_DIGITAL_ART.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Violence/CANTOR,JAYZEL_DIGITAL_ART.png" alt="Art 3">
+                                <h3>JAYZEL CANTOR </h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Difference doesn t mean violence ', 'Difference doesn’t mean violence in Gender-Based Violence (GBV) means that being different in gender, identity, or roles should not lead to abuse or harm. GBV often happens because of unfair societal norms and power differences that see these differences as wrong. However, differences are natural and should be accepted instead of being used as reasons to hurt others. To stop GBV, we need to challenge harmful beliefs, treat everyone equally, and respect each person for who they are. Everyone has the right to live without fear or violence, no matter their differences ', 'GAHOY, MAXZIVIEN', 'assets/img/Violence/Gahoy, Maxzivien Z.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Violence/Gahoy, Maxzivien Z.png" alt="Art 3">
+                                <h3>MAXZIVIEN GAHOY </h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Shadows of Silence ', 'Gender-based violence touches lives across all identities, leaving deep emotional and mental scars. This digital artwork tells the story of those who feel trapped in cycles of fear, pain, and isolation, unable to find a way out. It serves as a reminder to see their struggles, to listen with empathy, and to act with compassion. Together, we can break the silence, offer hope, and support the mental health and healing of those affected ', 'MALVAR, DIANA JEAN', 'assets/img/Violence/Malvar, Diana Jean.png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Violence/Malvar, Diana Jean.png" alt="Art 3">
+                                <h3>DIANA JEAN MALVAR </h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup(' Silent Wounds ', 'This artwork shows the deep pain of someone who has suffered gender-based abuse in silence. It represents a person who had been hurt, with handprints on their body symbolizing the marks left by physical and emotional abuse. It shows how trauma affects the mind, making it hard to think clearly or feel safe ', 'SABLAN, CHARITY', 'assets/img/Violence/Sablan, Charity Z..png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Violence/Sablan, Charity Z..png" alt="Art 3">
+                                <h3>CHARITY SABLAN </h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>
+                        <div class="DigArt">
+                            <div class="art-piece" onclick="openPopup('Fractured Mind, Bound by Silence ', 'The artwork depicts a womans silhouette with a complex, fragmented design within her head, symbolizing the internal turmoil and psychological impact of gender-based violence. The intricate patterns represent the intricate web of thoughts, emotions, and trauma that victims often experience. The swirling patterns within her head suggest the suppression of emotions and voices due to the trauma of gender-based violence, reflecting the weight of the silence that victims often carry. The stark contrast between the smooth silhouette and the chaotic interior highlights the external facade often maintained by survivors while grappling with internal struggles ', 'SANTOS, CHRISTIAN MARK', 'assets/img/Violence/SANTOS, CHRISTIAN MARK D..png','HOVER ON IMAGE TO ZOOM IN')">
+                                <img src="assets/img/Violence/SANTOS, CHRISTIAN MARK D..png" alt="Art 3">
+                                <h3>CHRISTIAN MARK SANTOS </h3>
+                                <div class="artist">Artist Name</div>
+                            </div>                     
+                        </div>                             
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="art-popup" class="art-popup">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <div class="popup-details">
+                <h3 id="popup-title"></h3>
+                <p id="popup-description"></p>
+                <h4 id="popup-artist"></h4>
+                <h5 id="popup-instruction"></>
+            </div>
+            <img id="popup-image" src="" alt="Popup Image">
+        </div>
+    </div>
+
+    <script src="assets/js/gallery.js"></script>
+</body>
+</html>
