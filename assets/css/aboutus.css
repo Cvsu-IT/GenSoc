@@ -95,22 +95,83 @@
         width: 100%;
        
     }
+    /* Apply the gradient text effect to headings */
+.hero h1, 
+.mission h2, 
+.collection h2 {
+    background: linear-gradient(to right, #a50a0ae7, #d17000, #f0b821, #2ba712, #2a44d4, #aa1bc7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Mission Section */
+.mission {
+    padding: 40px 20px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Collection Section */
+.collection {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.collection ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.collection li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0;
+}
+
     
-    
-  .text-blk {
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    line-height: 20px;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 40px;
-    margin-left: 0px;
-  }
-  
+
   .responsive-container-block {
     min-height: 75px;
     height: fit-content;
@@ -126,86 +187,11 @@
     margin-left: auto;
     justify-content: flex-start;
   }
-  
-  .responsive-container-block.bigContainer {
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
 
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    margin: 0 0 0 0;
-  }
+
+ 
   
-  .responsive-container-block.Container {
-    max-width: 1320px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;
-    margin-right: auto;
-    margin-bottom: 80px;
-    margin-left: auto;
-    padding-top: 10px;
-    padding-right: 0px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-  }
-  
-  .responsive-container-block.leftSide {
-    width: auto;
-    align-items: flex-start;
-    padding-top: 10px;
-    padding-right: 0px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    flex-direction: column;
-    position: static;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    max-width: 300px;
-  }
-  
-  .text-blk.heading {
-    font-size: 40px;
-    line-height: 64px;
-    font-weight: 900;
-    color: #00B2EB;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 40px;
-    margin-left: 0px;
-  }
-  
-  .text-blk.btn {
-    color: rgb(0, 178, 235);
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(160, 121, 0, 0.2) 0px 12px 35px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    cursor: pointer;
-  }
-  
+
   .responsive-container-block.rightSide {
     width: 675px;
     position: relative;
@@ -287,11 +273,6 @@
     margin-left: 75%;
     height: 42%;
   }
-  
-  .text-blk.subHeading {
-    font-size: 14px;
-    line-height: 25px;
-  }
 
 
   
@@ -335,6 +316,17 @@
     .responsive-container-block.leftSide {
       max-width: 450px;
     }
+    .hero, .mission, .collection {
+      width: 95%;
+  }
+
+  .hero h1, .mission h2, .collection h2 {
+      font-size: 1.5rem;
+  }
+
+  .hero p, .mission p, .collection li {
+      font-size: 1rem;
+  }
   }
   
   @media (max-width: 500px) {
